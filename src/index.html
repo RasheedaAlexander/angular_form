@@ -20,11 +20,13 @@
   <script src="systemjs.config.js"></script>
   <script>
   System.config({
-    transpiler: 'typescript',
-    typescriptOptions: { emitDecoratorMetadata: true },
+    map: {
+      app: 'assets/js/app'
+    },
     packages: {
       app: { // must match your folder name
-        defaultExtension: 'ts'
+        format: 'register',
+        defaultExtension: 'js'
       }
     }
   });
