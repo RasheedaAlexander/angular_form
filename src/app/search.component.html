@@ -9,9 +9,9 @@
 
 <div *ngIf="item">
 <ul>
-  <li *ngFor="let item of items | async">{{item}}</li>
-  <p>{{artistName}} - {{primaryGenreName}}</p>
-  <p>{{albumName}}</p>
-  <img src="{{item.artworkUrl60}}">
+  <li *ngFor="let item of items">{{item | json}}</li>
+  <li><p>{{item.artistName}} - {{item.primaryGenreName}}</p></li>
+  <li><p>{{item.albumName}}</p></li>
+  <li><img src="{{item.artworkUrl60}}"></li>
 </ul>
 </div>

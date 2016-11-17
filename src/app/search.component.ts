@@ -17,7 +17,7 @@ import 'rxjs/add/operator/map';
 export class SearchComponent {
   title   = 'Itunes Search';
   fetches = 'Fetches after each keystroke';
-  items: Observable<string[]>;
+  public items: Observable<string[]>;
 
   search (term) {
     this.itunesService.search(term).then(result => {
