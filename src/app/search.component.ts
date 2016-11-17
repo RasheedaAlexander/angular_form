@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs/Rx';
 import { Subject } from 'rxjs/Subject';
 import {SearchPipe} from './search.pipe';
 
@@ -12,6 +12,7 @@ import 'rxjs/add/operator/map';
 @Component({
   selector: 'search',
   templateUrl: 'search.component.html',
+  styleUrls: ['search.component.css'],
   providers: [ ItunesService ]
 })
 export class SearchComponent {
