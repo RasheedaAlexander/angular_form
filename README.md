@@ -30,3 +30,29 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 # angular_form
+
+##############################
+
+## Lessons Learned
+
+### The Good
+
++ Dependency injection was helpful with managing code
+
++ Working with the CLI instead of quick start caused some setbacks. But the lessons learned from not starting out with perfect code helped me get a better understanding
+
++ The performance speed is much faster with Angular2
+
++ In the future, I'd like to mimic Apple Music's mobile app
+
+### The Bad? Errors
+
++ Working through errors was very time consuming. Console.log helped me work through issues I was having with returning objects from iTunes's API
+
++ System.config keeps returning errors even though the file was moved to the root folder and has the correct syntax (according to documentation)
+
++ Relative paths produce errors when components or services are in other folders. Everything has to be in the same folder to function properly
+
++ A function that was removed from the project returns errors in the console
+
++ Configuration files and libraries in script tags also throw errors (index.js)
