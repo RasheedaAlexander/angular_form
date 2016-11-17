@@ -1,0 +1,17 @@
+<form>
+    <div class="form-group">
+
+      <h1>{{title}}</h1>
+      <p><i>{{fetches}}</i></p>
+      <input #term (keyup)="search(term.value)"  type="text" name="item" [(ngModel)]="item" class="form-control" placeholder="Search Music..."/>
+    </div>
+</form>
+
+<div *ngIf="item">
+<ul>
+  <li *ngFor="let item of items | async">{{item}}</li>
+  <p>{{artistName}} - {{primaryGenreName}}</p>
+  <p>{{albumName}}</p>
+  <img src="{{item.artworkUrl60}}">
+</ul>
+</div>
