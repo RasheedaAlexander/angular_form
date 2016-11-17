@@ -7,13 +7,13 @@ body {
 /* Master Styles */
 h1 {
   color: #000;
-font-family: 'Playfair Display SC', serif;
-font-size: 500%;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 500%;
   font-weight: bold;
 }
 h2, h3 {
   color: #444;
-font-family: 'Playfair Display SC', serif;
+  font-family: 'Playfair Display SC', serif;
   font-weight: lighter;
 }
 i {
@@ -51,6 +51,7 @@ ul {
   text-decoration: underline;
 }
 #categories {
+  width: 750px;
   margin: 10px auto;
   text-align: center;
   border-radius: 3px;
@@ -73,16 +74,32 @@ ul {
   padding: 10px;
   display: inline;
 }
+.col-md-6 {
+  display: inline;
+}
 .artistPic, .artistPic2 {
   width: 200px;
 }
 .track, .cName {
   font-weight: bold;
+  display: inline;
+  margin: 0 10px;
 }
 .price, .cPrice {
-  padding: 0;
+  padding: 10px;
   border: 3px solid blue;
   border-radius: 10px;
-  width: 125px;
+  width: 150px;
   text-align: center;
+  display: inline;
+  margin: 0 10px;
+}
+.price:hover {
+  background-color: blue;
+  color: #fff;
+}
+/* SO MUCH FOR DRY */
+.cPrice:hover {
+  background-color: blue;
+  color: #fff;
 }
