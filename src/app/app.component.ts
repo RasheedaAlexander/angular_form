@@ -1,13 +1,23 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+
 import {ItunesService} from './itunes.service';
 
+import 'rxjs/add/operator/map';
+
+
 @Component({
-  // moduleId: module.id,
   selector: 'my-app',
   templateUrl: 'app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers: [ItunesService]
+  providers: [ ItunesService ]
 })
 export class AppComponent {
-  title="Hello";
+  title   = 'Itunes Search';
+  fetches = 'Fetches after each keystroke';
+  items: Observable<string[]>;
+
+  search (term: string) {
+    this.items = this.itunesService.search(term);
+  }
+  constructor (private itunesService: ItunesService) { }
 }
