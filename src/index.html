@@ -2,14 +2,47 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>AngularForm</title>
+  <title>Itunes Search</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="http://www.giftvault.com/uploads/products/412X412/2011_09_30_02_06_16_drdre.beats.studio.jethem.side.jpg">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+
+
+  <!-- 1. Load libraries -->
+  <!-- Polyfill(s) for older browsers -->
+  <!-- <script src="node_modules/core-js/client/shim.min.js"></script> -->
+  <!-- <script src="node_modules/zone.js/dist/zone.js"></script> -->
+  <!-- <script src="node_modules/reflect-metadata/Reflect.js"></script> -->
+  <!-- <script src="node_modules/systemjs/dist/system.src.js"></script> -->
+  <!-- 2. Configure SystemJS -->
+  <script src="systemjs.config.js"></script>
+  <script>
+  // System.config({
+  //   packages: {
+  //     map: {
+  //       app: 'src/app' // must match your folder name
+  //     }
+      // app: {
+      //   format: 'register',
+      //   defaultExtension: 'js'
+      // }
+  //   }
+  // });
+  System.import('app').catch(function(err){ console.error(err); });
+  </script>
+
+
+  <!-- <script src="https://code.angularjs.org/tools/typescript.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.7/Rx.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.7/angular2.min.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.7/http.min.js"></script> -->
 </head>
+<!-- 3. Display the application -->
 <body>
-  <base href="/">
   <my-app>Loading...</my-app>
 </body>
 </html>
