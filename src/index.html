@@ -12,7 +12,6 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 
-
   <!-- 1. Load libraries -->
   <!-- Polyfill(s) for older browsers -->
   <!-- <script src="node_modules/core-js/client/shim.min.js"></script> -->
@@ -22,17 +21,6 @@
   <!-- 2. Configure SystemJS -->
   <script src="systemjs.config.js"></script>
   <script>
-  // System.config({
-  //   packages: {
-  //     map: {
-  //       app: 'src/app' // must match your folder name
-  //     }
-      // app: {
-      //   format: 'register',
-      //   defaultExtension: 'js'
-      // }
-  //   }
-  // });
   System.import('app').catch(function(err){ console.error(err); });
   </script>
 
