@@ -40,6 +40,7 @@ ul {
   border-radius: 7px;
   font-size: 35px;
   padding: 0;
+  background-color: #e8e8e8;
 }
 .form-control:active {
   background-color: #B76E79;
@@ -48,8 +49,6 @@ ul {
 input::-webkit-input-placeholder {
   font-size: 35px;
   line-height: 30;
-  background-color: #e8e8e8;
-
 }
 .heading {
   margin: 40px 0;
