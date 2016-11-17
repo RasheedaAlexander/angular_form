@@ -17,15 +17,6 @@ export class ItunesService {
     // console.log(searchUrl + " Search URL");
     // console.log(URLSearchParams + " URL Search Params");
 
-    // let params = new URLSearchParams();
-    //   params.set('country', 'us');
-    //   params.set('media', 'software');
-    //     params.set('limit', '10');
-    //   params.set('callback', 'JSONP_CALLBACK');
-
-    // TODO: Add error handling
-    //  console.log(this.jsonp);
-
     return this.jsonp.request(searchUrl).map(response => {
       return response.json();
     }).toPromise();

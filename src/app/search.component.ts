@@ -8,7 +8,6 @@ import {ItunesService} from './itunes.service';
 
 import 'rxjs/add/operator/map';
 
-
 @Component({
   selector: 'search',
   templateUrl: 'search.component.html',
@@ -17,7 +16,7 @@ import 'rxjs/add/operator/map';
 })
 export class SearchComponent {
   title   = 'Itunes Search';
-  fetches = 'Fetches after each keystroke';
+  fetches = 'Search Itunes for your favorite music. Press "Enter" to submit.';
   public items: Observable<string[]>;
 
   search (term) {

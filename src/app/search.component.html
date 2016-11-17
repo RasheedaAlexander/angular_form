@@ -2,8 +2,8 @@
   <div class="form-group">
 
     <h1>{{title}}</h1>
-    <!-- <p><i>{{fetches}}</i></p> -->
-    <input class="search" #term (keyup)="search(term.value)"  type="text" name="item" [(ngModel)]="item" class="form-control" placeholder="Search Music..."/>
+    <p><i>{{fetches}}</i></p>
+    <input #term (keyup)="search(term.value)"  type="text" name="item" [(ngModel)]="item" class="form-control" placeholder="Search Music..."/>
   </div>
 </form>
 
@@ -11,8 +11,8 @@
   <div class="container">
     <ul id="categories">
       <li>All</li>
-      <li>Song</li>
-      <li>Album</li>
+      <li>Songs</li>
+      <li>Albums</li>
       <li>Ringtones</li>
       <li>More</li>
     </ul>
