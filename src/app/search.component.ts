@@ -12,7 +12,7 @@ import 'rxjs/add/operator/map';
 @Component({
   selector: 'search',
   templateUrl: 'search.component.html',
-  styleUrls: ['search.component.css'],
+  // styleUrls: ['search.component.css'],
   providers: [ ItunesService ]
 })
 export class SearchComponent {

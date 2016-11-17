@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 2em;
+  background-color: #FCFBE3;
+  text-align: center;
+}
+/* Master Styles */
+h1 {
+  color: #000;
+font-family: 'Playfair Display SC', serif;
+font-size: 500%;
+  font-weight: bold;
+}
+h2, h3 {
+  color: #444;
+font-family: 'Playfair Display SC', serif;
+  font-weight: lighter;
+}
+i {
+  font-size:220%;
+}
+p{
+  font-size: 150%;
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+  font-size: 200%;
+  padding: 10px;
+}
+.search {
+  background-color: #e8e8e8;
+}
+.form-group {
+  background-color: #B76E79;
+  padding: 10px 10px 40px 10px;
+  box-shadow: 10px 10px 5px #888888;
+}
+.form-control {
+  width: 40%;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+.heading {
+  margin: 40px 0;
+  text-align: left;
+  color: #000;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#categories {
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 3px;
+  border: 2px solid blue;
+  padding-left: 0;
+}
+#categories li:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+#categories li:last-child {
+  padding-right: 0;
+}
+#categories li {
+  text-align: center;
+  border-radius: 3px;
+  border-left: 2px solid blue;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  display: inline;
+}
+.artistPic, .artistPic2 {
+  width: 200px;
+}
+.track, .cName {
+  font-weight: bold;
+}
+.price, .cPrice {
+  padding: 0;
+  border: 3px solid blue;
+  border-radius: 10px;
+  width: 125px;
+  text-align: center;
+}

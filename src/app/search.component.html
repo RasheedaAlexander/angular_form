@@ -1,17 +1,44 @@
 <form>
-    <div class="form-group">
+  <div class="form-group">
 
-      <h1>{{title}}</h1>
-      <p><i>{{fetches}}</i></p>
-      <input #term (keyup)="search(term.value)"  type="text" name="item" [(ngModel)]="item" class="form-control" placeholder="Search Music..."/>
-    </div>
+    <h1>{{title}}</h1>
+    <!-- <p><i>{{fetches}}</i></p> -->
+    <input class="search" #term (keyup)="search(term.value)"  type="text" name="item" [(ngModel)]="item" class="form-control" placeholder="Search Music..."/>
+  </div>
 </form>
 
-<div *ngIf="item">
-<ul>
-  <li *ngFor="let item of items">{{item | json}}</li>
-  <li><p>{{item.artistName}} - {{item.primaryGenreName}}</p></li>
-  <li><p>{{item.albumName}}</p></li>
-  <li><img src="{{item.artworkUrl60}}"></li>
-</ul>
+<div class="container-fluid" *ngIf="item">
+  <div class="container">
+    <ul id="categories">
+      <li>All</li>
+      <li>Song</li>
+      <li>Album</li>
+      <li>Ringtones</li>
+      <li>More</li>
+    </ul>
+  </div>
+
+  <div class="col-md-6" id="one">
+    <h2 class="heading">Songs</h2>
+    <ul *ngFor="let item of items">
+      <li class="row">
+        <img class="artistPic" src="{{item.artworkUrl100}}">
+        <p class="track">{{item.trackName}}</p>
+        <p class="price">${{item.trackPrice}}</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-md-6" id="two">
+    <h2 class="heading">Albums</h2>
+    <ul *ngFor="let item of items">
+      <li class="row">
+        <img class="artistPic2" src="{{item.artworkUrl100}}">
+        <p class="cName">{{item.collectionName}}</p>
+        <p class="cPrice">${{item.collectionPrice}}</p>
+      </li>
+    </ul>
+  </div>
+
+
 </div>
