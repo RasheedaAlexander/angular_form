@@ -3,7 +3,7 @@ import {Injectable} from '@angular/core';
 import { Jsonp } from '@angular/http';
 
 import 'rxjs/Rx';
-
+// @Injectable decorator tells Angular that this class is meant to be used as a provider to other components
 @Injectable()
 // Itunes service fetches
 export class ItunesService {

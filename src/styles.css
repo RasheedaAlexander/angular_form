@@ -29,6 +29,11 @@ ul {
   font-size: 200%;
   padding: 10px;
 }
+.results {
+  margin: 10px 0;
+  width: 45%;
+  display: inline-block;
+}
 .form-group {
   background-color: #B76E79;
   box-shadow: 10px 10px 5px #888888;
@@ -82,11 +87,12 @@ input::-webkit-input-placeholder {
   padding: 10px;
   display: inline;
 }
-.col-md-6 {
-  display: inline;
-}
+/*.col-md-6 {
+display: inline;
+}*/
 .artistPic, .artistPic2 {
   width: 200px;
+  display: inline-block;
 }
 .track, .cName {
   font-weight: bold;
@@ -99,7 +105,7 @@ input::-webkit-input-placeholder {
   border-radius: 10px;
   width: 150px;
   text-align: center;
-  display: inline;
+  display: inline-block;
   margin: 0 10px;
 }
 .price:hover {
